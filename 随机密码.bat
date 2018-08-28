@@ -11,29 +11,29 @@ call :ys 8c "#                                      #"
 echo.
 call :ys 8d "========================================"  
 echo. 
-set ÍøÕ¾=
-call :ys 8a "ÊÊÓÃÍøÖ·£º"
-set /p ÍøÕ¾=
-set Ãû×Ö=
-call :ys 8b "ÕË»§Ãû³Æ£º"
-set /p Ãû×Ö=
+set ç½‘ç«™=
+call :ys 8a "é€‚ç”¨ç½‘å€ï¼š"
+set /p ç½‘ç«™=
+set åå­—=
+call :ys 8b "è´¦æˆ·åç§°ï¼š"
+set /p åå­—=
 call :ys 8c "========================================"  
 echo.
 call :ys 8d "#            Power by WZC              #"
 echo.
-call :ys 8a "#            ÃÜÂëÀàĞÍ                  #"
+call :ys 8a "#            å¯†ç ç±»å‹                  #"
 echo.  
-call :ys 8b "#            1- ´¿Êı×Ö                 #" 
+call :ys 8b "#            1- çº¯æ•°å­—                 #" 
 echo.
-call :ys 8c "#            2- Êı×ÖÓë´óĞ¡Ğ´×ÖÄ¸       #"  
+call :ys 8c "#            2- æ•°å­—ä¸å¤§å°å†™å­—æ¯       #"  
 echo.
-call :ys 8d "#            3- Êı×ÖºÍÌØÊâ·ûºÅ         #" 
+call :ys 8d "#            3- æ•°å­—å’Œç‰¹æ®Šç¬¦å·         #" 
 echo.
-call :ys 8a "#            4- ×ÖÄ¸¼ÓÌØÊâ·ûºÅ         #"
+call :ys 8a "#            4- å­—æ¯åŠ ç‰¹æ®Šç¬¦å·         #"
 echo.
-call :ys 8b "#            5- Êı×Ö¼Ó×ÖÄ¸¼ÓÌØÊâ·ûºÅ   #"
+call :ys 8b "#            5- æ•°å­—åŠ å­—æ¯åŠ ç‰¹æ®Šç¬¦å·   #"
 echo.
-call :ys 8c "#            6- ©–¦¯0oO                 #"
+call :ys 8c "#            6- ã€‡ÎŸ0oO                 #"
 echo.
 call :ys 8d "#            7- 1Il                    #"
 echo.
@@ -46,7 +46,7 @@ echo.
 call :ys 8d "========================================"  
 echo. 
 set choice=
-call :ys 8a "ÃÜÂëÀàĞÍ1¡¢2¡¢3¡¢4¡¢5¡¢6¡¢7¡¢8¡¢9¡¢10£º" 
+call :ys 8a "å¯†ç ç±»å‹1ã€2ã€3ã€4ã€5ã€6ã€7ã€8ã€9ã€10ï¼š" 
 set /p choice=
 goto %choice%
 :1
@@ -70,7 +70,7 @@ set svar=Di^bB-*/tTy$OSdmMn01pck3e~`#+PqQKEfFgu5H4,lLaNowR;XGh:W=x!%\IjJCZrAs267
 set wei=79
 goto 11
 :6
-set svar=©–¦¯0oO
+set svar=ã€‡ÎŸ0oO
 set wei=5
 goto 11
 :7
@@ -91,7 +91,7 @@ set wei=4
 goto 11
 :11
 set weishu=
-call :ys 8b "ÉèÖÃÃÜÂëÎ»Êı£º" 
+call :ys 8b "è®¾ç½®å¯†ç ä½æ•°ï¼š" 
 set /p weishu=
 setlocal enabledelayedexpansion
 set "rvar="
@@ -102,12 +102,12 @@ set /a rand=%random%%%%wei%
 set "rvar=%rvar%!svar:~%rand%,1!"
 if not %num%==0 goto loop
 echo !rvar!
-echo %date%%time%>>%~dp0ÃÜÂë.txt
-echo ÍøÕ¾£º%ÍøÕ¾%>>%~dp0ÃÜÂë.txt
-echo ÕËºÅ£º%Ãû×Ö%£»%weishu%×Ö½ÚÃÜÂë£º%rvar%>>%~dp0ÃÜÂë.txt
-echo. >> %~dp0ÃÜÂë.txt
+echo %date%%time%>>%~dp0å¯†ç .txt
+echo ç½‘ç«™ï¼š%ç½‘ç«™%>>%~dp0å¯†ç .txt
+echo è´¦å·ï¼š%åå­—%ï¼›%weishu%å­—èŠ‚å¯†ç ï¼š%rvar%>>%~dp0å¯†ç .txt
+echo. >> %~dp0å¯†ç .txt
 set tui=
-call :ys 8c "°´y¼ü¼ÌĞø°´ÆäËû¼üÍË³ö"
+call :ys 8c "æŒ‰yé”®ç»§ç»­æŒ‰å…¶ä»–é”®é€€å‡º"
 set /p tui=
 if "%tui%"=="y" (goto 12) else (exit) 
 exit
